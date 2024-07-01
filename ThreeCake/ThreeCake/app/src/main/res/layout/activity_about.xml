@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6F4E37"
+    tools:context=".About">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-35dp"
+            android:layout_marginEnd="64dp"
+            android:background="@drawable/rectangle"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+            <TextView
+                android:id="@+id/txtAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:text="About Us"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgProfile1"
+                android:layout_width="129dp"
+                android:layout_height="129dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/txtName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/libre_baskerville_italic"
+                android:gravity="center"
+                android:text="Three's Cake Bakery"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDesc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:text="A renowned bakery known for its exceptional cakes and pastries, blending traditional recipes with modern twists." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btPrev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/chocolate"
+                    android:fontFamily="@font/inter_medium"
+                    android:foregroundGravity="center"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:onClick="prev"
+                    android:text="Prev"
+                    android:textSize="14sp"
+                    app:cornerRadius="100sp"
+                    app:strokeColor="@color/yellow"
+                    app:strokeWidth="1sp" />
+
+                <Button
+                    android:id="@+id/btNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/chocolate"
+                    android:fontFamily="@font/inter_medium"
+                    android:foregroundGravity="center"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:onClick="next"
+                    android:text="Next"
+                    android:textSize="14sp"
+                    app:cornerRadius="100sp"
+                    app:strokeColor="@color/yellow"
+                    app:strokeWidth="1sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="@color/chocolate"
+                android:fontFamily="@font/inter_medium"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:text="Back"
+                android:textSize="14sp"
+                app:cornerRadius="100sp"
+                app:strokeColor="@color/yellow"
+                app:strokeWidth="1sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="-50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/cake2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="67dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="108dp"
+            android:layout_marginEnd="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cake" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
